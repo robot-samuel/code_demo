@@ -47,10 +47,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pc-robot/Workspace/demo/zmqcpp/testproxy
+CMAKE_SOURCE_DIR = /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid
+CMAKE_BINARY_DIR = /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid
 
 #=============================================================================
 # Target rules for target CMakeFiles/testproxy.dir
@@ -59,7 +59,7 @@ CMAKE_BINARY_DIR = /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid
 CMakeFiles/testproxy.dir/all:
 	$(MAKE) -f CMakeFiles/testproxy.dir/build.make CMakeFiles/testproxy.dir/depend
 	$(MAKE) -f CMakeFiles/testproxy.dir/build.make CMakeFiles/testproxy.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid/CMakeFiles  1
 	@echo "Built target testproxy"
 .PHONY : CMakeFiles/testproxy.dir/all
 
@@ -69,9 +69,9 @@ all: CMakeFiles/testproxy.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/testproxy.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/testproxy.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid/CMakeFiles 0
 .PHONY : CMakeFiles/testproxy.dir/rule
 
 # Convenience name for target.

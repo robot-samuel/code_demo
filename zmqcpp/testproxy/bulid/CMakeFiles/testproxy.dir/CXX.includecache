@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/pc-robot/Workspace/demo/zmqcpp/testproxy/cppzmq-master/zmq.hpp
+/home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/cppzmq-master/zmq.hpp
 zmq.h
 -
 algorithm
@@ -28,7 +28,7 @@ chrono
 tuple
 -
 
-/home/pc-robot/Workspace/demo/zmqcpp/testproxy/main.cpp
+/home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/main.cpp
 iostream
 -
 sstream
@@ -36,5 +36,5 @@ sstream
 string
 -
 cppzmq-master/zmq.hpp
-/home/pc-robot/Workspace/demo/zmqcpp/testproxy/cppzmq-master/zmq.hpp
+/home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/cppzmq-master/zmq.hpp
 

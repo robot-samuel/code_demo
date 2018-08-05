@@ -35,10 +35,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/pc-robot/Workspace/demo/zmqcpp/testproxy
+CMAKE_SOURCE_DIR = /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid
+CMAKE_BINARY_DIR = /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid
 
 # Include any dependencies generated for this target.
 include CMakeFiles/testproxy.dir/depend.make
@@ -51,17 +51,17 @@ include CMakeFiles/testproxy.dir/flags.make
 
 CMakeFiles/testproxy.dir/main.cpp.o: CMakeFiles/testproxy.dir/flags.make
 CMakeFiles/testproxy.dir/main.cpp.o: ../main.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/testproxy.dir/main.cpp.o"
-	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/testproxy.dir/main.cpp.o -c /home/pc-robot/Workspace/demo/zmqcpp/testproxy/main.cpp
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/testproxy.dir/main.cpp.o -c /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/main.cpp
 
 CMakeFiles/testproxy.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/testproxy.dir/main.cpp.i"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pc-robot/Workspace/demo/zmqcpp/testproxy/main.cpp > CMakeFiles/testproxy.dir/main.cpp.i
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/main.cpp > CMakeFiles/testproxy.dir/main.cpp.i
 
 CMakeFiles/testproxy.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/testproxy.dir/main.cpp.s"
-	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pc-robot/Workspace/demo/zmqcpp/testproxy/main.cpp -o CMakeFiles/testproxy.dir/main.cpp.s
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/main.cpp -o CMakeFiles/testproxy.dir/main.cpp.s
 
 CMakeFiles/testproxy.dir/main.cpp.o.requires:
 .PHONY : CMakeFiles/testproxy.dir/main.cpp.o.requires
@@ -97,6 +97,6 @@ CMakeFiles/testproxy.dir/clean:
 .PHONY : CMakeFiles/testproxy.dir/clean
 
 CMakeFiles/testproxy.dir/depend:
-	cd /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pc-robot/Workspace/demo/zmqcpp/testproxy /home/pc-robot/Workspace/demo/zmqcpp/testproxy /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid /home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid/CMakeFiles/testproxy.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid /home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid/CMakeFiles/testproxy.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/testproxy.dir/depend
 

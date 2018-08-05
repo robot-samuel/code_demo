@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/pc-robot/Workspace/demo/zmqcpp/testproxy/main.cpp" "/home/pc-robot/Workspace/demo/zmqcpp/testproxy/bulid/CMakeFiles/testproxy.dir/main.cpp.o"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/main.cpp" "/home/pc-robot/Workspace/gitdemo/code_demo/zmqcpp/testproxy/bulid/CMakeFiles/testproxy.dir/main.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
