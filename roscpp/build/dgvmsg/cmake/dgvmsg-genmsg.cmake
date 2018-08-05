@@ -2,7 +2,7 @@
 
 message(STATUS "dgvmsg: 17 messages, 0 services")
 
-set(MSG_I_FLAGS "-Idgvmsg:/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Idgvmsg:/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg;-Igeometry_msgs:/opt/ros/indigo/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/indigo/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -15,89 +15,89 @@ add_custom_target(dgvmsg_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg" "dgvmsg/Vector3"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" "dgvmsg/JoyFeedback"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg" ""
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/EncounterV.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/EncounterV.msg" "std_msgs/Header:dgvmsg/Encounter"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" ""
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoter.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoter.msg" "std_msgs/Header:dgvmsg/Vector3"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg" "dgvmsg/Vector3"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" "dgvmsg/DriverNode"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/String.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Joy.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/String.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Joy.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/EncounterV.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" "dgvmsg/JoyFeedback"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/EncounterV.msg" "dgvmsg/Encounter:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Imu.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" "dgvmsg/Twist:dgvmsg/Vector3:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Imu.msg" "geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Quaternion"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserScan.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserScan.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Joy.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/String.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Joy.msg" "std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/String.msg" ""
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" "std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" "dgvmsg/Vector3:std_msgs/Header:dgvmsg/Twist"
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Imu.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Imu.msg" "geometry_msgs/Vector3:std_msgs/Header:geometry_msgs/Quaternion"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg" ""
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" "dgvmsg/DriverNode"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoter.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoter.msg" "dgvmsg/Vector3:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" ""
 )
 
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserScan.msg" NAME_WE)
 add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "dgvmsg" "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserScan.msg" "std_msgs/Header"
 )
 
 #
@@ -107,105 +107,105 @@ add_custom_target(_dgvmsg_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/EncounterV.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserEcho.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoterctrl.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/String.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg"
-  "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg"
-  "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg;/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserScan.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Joy.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Imu.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Imu.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoter.msg"
   "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoter.msg"
-  "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_cpp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverStatues.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserEcho.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/EncounterV.msg"
+  "${MSG_I_FLAGS}"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg"
+  "${MSG_I_FLAGS}"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Joy.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/String.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoterctrl.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverStatues.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_cpp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserScan.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/dgvmsg
 )
 
@@ -223,39 +223,39 @@ add_custom_target(dgvmsg_generate_messages_cpp
 add_dependencies(dgvmsg_generate_messages dgvmsg_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/EncounterV.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoter.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/String.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Joy.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/EncounterV.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Imu.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserScan.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Joy.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/String.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Imu.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoter.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserScan.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_cpp _dgvmsg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -268,105 +268,105 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dgvmsg_generate_messages_cpp)
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/EncounterV.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserEcho.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoterctrl.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/String.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg"
-  "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg"
-  "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg;/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserScan.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Joy.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Imu.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Imu.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoter.msg"
   "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoter.msg"
-  "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_lisp(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverStatues.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserEcho.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/EncounterV.msg"
+  "${MSG_I_FLAGS}"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg"
+  "${MSG_I_FLAGS}"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Joy.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/String.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoterctrl.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverStatues.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_lisp(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserScan.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/dgvmsg
 )
 
@@ -384,39 +384,39 @@ add_custom_target(dgvmsg_generate_messages_lisp
 add_dependencies(dgvmsg_generate_messages dgvmsg_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/EncounterV.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoter.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/String.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Joy.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/EncounterV.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Imu.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserScan.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Joy.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/String.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Imu.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoter.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserScan.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_lisp _dgvmsg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -429,105 +429,105 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS dgvmsg_generate_messages_lisp)
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg"
   "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/EncounterV.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserEcho.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg"
   "${MSG_I_FLAGS}"
-  ""
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoterctrl.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/String.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg"
-  "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg"
-  "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg;/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserScan.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Joy.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
-  "${MSG_I_FLAGS}"
-  ""
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Imu.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Imu.msg"
   "${MSG_I_FLAGS}"
   "/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/indigo/share/geometry_msgs/cmake/../msg/Quaternion.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoter.msg"
   "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
 )
 _generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoter.msg"
-  "${MSG_I_FLAGS}"
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
-)
-_generate_msg_py(dgvmsg
-  "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverStatues.msg"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserEcho.msg"
   "${MSG_I_FLAGS}"
   ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/EncounterV.msg"
+  "${MSG_I_FLAGS}"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg"
+  "${MSG_I_FLAGS}"
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg;/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg;/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Joy.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/String.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoterctrl.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverStatues.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
+)
+_generate_msg_py(dgvmsg
+  "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserScan.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/indigo/share/std_msgs/cmake/../msg/Header.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/dgvmsg
 )
 
@@ -545,39 +545,39 @@ add_custom_target(dgvmsg_generate_messages_py
 add_dependencies(dgvmsg_generate_messages dgvmsg_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Twist.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Encounter.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverNode.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/EncounterV.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserEcho.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoter.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Vector3.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Twist.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/String.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Joy.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedbackArray.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/EncounterV.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Imu.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/LaserScan.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Encounter.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Joy.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/String.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/remoterctrl.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverNode.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/ctrl_ModeMessage.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/Imu.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/Vector3.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverVelocity.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/JoyFeedback.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/remoter.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/msg/DriverStatues.msg" NAME_WE)
+get_filename_component(_filename "/home/pc-robot/Workspace/gitdemo/code_demo/roscpp/src/dgvmsg/msg/LaserScan.msg" NAME_WE)
 add_dependencies(dgvmsg_generate_messages_py _dgvmsg_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -123,7 +123,7 @@ void bmsSensorrMode::bmsSensorrMode_master()
 			
          try{
 		   
-                    while(ros::ok()){
+                    while(1){
 			
 			DevCmd_GetBmsInfo();
 			onlineMsg.check_connect();
