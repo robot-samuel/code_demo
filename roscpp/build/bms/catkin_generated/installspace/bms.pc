@@ -1,0 +1,8 @@
+prefix=/home/pc-robot/Workspace/demo/roscpp/install
+
+Name: bms
+Description: Description of bms
+Version: 0.0.0
+Cflags: -I/home/pc-robot/Workspace/demo/roscpp/install/include
+Libs: -L/home/pc-robot/Workspace/demo/roscpp/install/lib -lbms -ldgvmsg
+Requires: roscpp rospy std_msgs

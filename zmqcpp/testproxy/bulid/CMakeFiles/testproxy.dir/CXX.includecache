@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/pc-robot/Workspace/demo/zmqcpp/testproxy/cppzmq-master/zmq.hpp
+zmq.h
+-
+algorithm
+-
+cassert
+-
+cstring
+-
+string
+-
+exception
+-
+vector
+-
+iterator
+-
+chrono
+-
+tuple
+-
+
+/home/pc-robot/Workspace/demo/zmqcpp/testproxy/main.cpp
+iostream
+-
+sstream
+-
+string
+-
+cppzmq-master/zmq.hpp
+/home/pc-robot/Workspace/demo/zmqcpp/testproxy/cppzmq-master/zmq.hpp
+

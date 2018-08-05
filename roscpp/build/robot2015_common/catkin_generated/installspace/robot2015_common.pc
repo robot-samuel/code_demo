@@ -1,0 +1,8 @@
+prefix=/home/pc-robot/Workspace/demo/roscpp/install
+
+Name: robot2015_common
+Description: Description of robot2015_common
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pc-robot/Workspace/demo/roscpp/install/lib 
+Requires: 

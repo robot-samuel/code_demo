@@ -1,0 +1,8 @@
+prefix=/home/pc-robot/Workspace/demo/roscpp/devel
+
+Name: dgvmsg
+Description: Description of dgvmsg
+Version: 0.0.0
+Cflags: -I/home/pc-robot/Workspace/demo/roscpp/devel/include -I/home/pc-robot/Workspace/demo/roscpp/src/dgvmsg/include
+Libs: -L/home/pc-robot/Workspace/demo/roscpp/devel/lib 
+Requires: message_runtime geometry_msgs

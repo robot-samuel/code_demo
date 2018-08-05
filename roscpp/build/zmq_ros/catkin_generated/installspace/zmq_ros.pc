@@ -1,0 +1,8 @@
+prefix=/home/pc-robot/Workspace/demo/roscpp/install
+
+Name: zmq_ros
+Description: Description of zmq_ros
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/pc-robot/Workspace/demo/roscpp/install/lib 
+Requires: 

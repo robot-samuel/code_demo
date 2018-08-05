@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="boostdemo" Database="">
+  <Project Name="01-boostudpserver" Path="01-boostudpserver/01-boostudpserver.project" Active="No"/>
+  <Project Name="02-boostudpclient" Path="02-boostudpclient/02-boostudpclient.project"/>
+  <Project Name="03-aisoserver" Path="03-aisoserver/03-aisoserver.project" Active="No"/>
+  <Project Name="aisoclient" Path="04-aisoclient/aisoclient.project" Active="No"/>
+  <Project Name="05-tcpserver" Path="05-tcpserver/05-tcpserver.project" Active="No"/>
+  <Project Name="06-tcpclient" Path="06-tcpclient/06-tcpclient.project"/>
+  <Project Name="07-cnet200" Path="07-udprecv_send/07-udprecv_send.project" Active="No"/>
+  <Project Name="08_sync_timer" Path="08_sync_timer/08_sync_timer.project" Active="No"/>
+  <Project Name="09-async_timer" Path="09-async_timer/09-async_timer.project"/>
+  <Project Name="10-callbackfunparam" Path="10-callbackfunparam/10-callbackfunparam.project"/>
+  <Project Name="11-memberfunparam" Path="11-memberfunparam/11-memberfunparam.project"/>
+  <Project Name="12-muti_thread" Path="12-muti_thread/12-muti_thread.project" Active="No"/>
+  <Project Name="14-async_UDP_server" Path="13-async_UDP_server/13-async_UDP_server.project"/>
+  <Project Name="13-async_UDP_client" Path="13-async_UDP_client/13-async_UDP_client.project"/>
+  <Project Name="15-udpnode_exam_1_async" Path="15-udpnode_exam_1_async/15-udpnode_exam_1_async.project" Active="No"/>
+  <Project Name="16-udpnpde_exam_2_sync" Path="16-udpnpde_exam_2_sync/16-udpnpde_exam_2_sync.project"/>
+  <Project Name="17-udpnode_exam_3_async_callback" Path="17-udpnode_exam_3_async_callback/17-udpnode_exam_3_async_callback.project" Active="No"/>
+  <Project Name="18-synctronNode" Path="18-synctronNode/18-synctronNode.project"/>
+  <Project Name="19-twoDriverSynctron" Path="19-twoDriverSynctron/19-twoDriverSynctron.project"/>
+  <Project Name="20-syncmutithread_synctronNode" Path="20-syncmutithread_synctronNode/20-syncmutithread_synctronNode.project"/>
+  <Project Name="21-asyn_synctronNode" Path="21-asyn_synctronNode/21-asyn_synctronNode.project"/>
+  <Project Name="22-I_DGV_dirffDriv_syntron" Path="22-I_DGV_dirffDriv_syntron/22-I_DGV_dirffDriv_syntron.project"/>
+  <Project Name="23-Serial_simples" Path="23-Serial_simples/23-Serial_simples.project" Active="No"/>
+  <Project Name="24-serial_async_simples" Path="24-serial_async_simples/24-serial_async_simples.project" Active="No"/>
+  <Project Name="prototest" Path="prototest/prototest.project" Active="No"/>
+  <Project Name="26-I_DGV_tcpserver_syntron" Path="26-I_DGV_tcpserver_syntron/26-I_DGV_tcpserver_syntron.project" Active="No"/>
+  <Project Name="27-singal-singal_candriver" Path="27-singal-singal_candriver/27-singal-singal_candriver.project"/>
+  <Project Name="28-idgv_synctron_v20" Path="28-idgv_synctron_v20/28-idgv_synctron_v20.project" Active="No"/>
+  <Project Name="29-socketcan_synctron_v10" Path="29-socketcan_synctron_v10/29-socketcan_synctron_v10.project" Active="No"/>
+  <Project Name="30-singal-motec-driver-test" Path="30-singal-motec-driver-test/30-singal-motec-driver-test.project" Active="Yes"/>
+  <Project Name="31-twomotec-driver-test" Path="31-twomotec-driver-test/31-twomotec-driver-test.project"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="01-boostudpserver" ConfigName="Debug"/>
+      <Project Name="02-boostudpclient" ConfigName="Debug"/>
+      <Project Name="03-aisoserver" ConfigName="Debug"/>
+      <Project Name="04-aisoclient" ConfigName="Debug"/>
+      <Project Name="04-aisoclient" ConfigName="Debug"/>
+      <Project Name="05-tcpserver" ConfigName="Debug"/>
+      <Project Name="06-tcpclient" ConfigName="Debug"/>
+      <Project Name="07-cnet200" ConfigName="Debug"/>
+      <Project Name="08_sync_timer" ConfigName="Debug"/>
+      <Project Name="09-async_timer" ConfigName="Debug"/>
+      <Project Name="10-callbackfunparam" ConfigName="Debug"/>
+      <Project Name="11-memberfunparam" ConfigName="Debug"/>
+      <Project Name="12-muti_thread" ConfigName="Debug"/>
+      <Project Name="14-async_UDP_server" ConfigName="Debug"/>
+      <Project Name="13-async_UDP_client" ConfigName="Debug"/>
+      <Project Name="15-udpnode_exam_1_async" ConfigName="Debug"/>
+      <Project Name="16-udpnpde_exam_2_sync" ConfigName="Debug"/>
+      <Project Name="17-udpnode_exam_3_async_callback" ConfigName="Debug"/>
+      <Project Name="17-udpnode_exam_3_async_callback" ConfigName="Debug"/>
+      <Project Name="18-synctronNode" ConfigName="Debug"/>
+      <Project Name="19-twoDriverSynctron" ConfigName="Debug"/>
+      <Project Name="20-syncmutithread_synctronNode" ConfigName="Debug"/>
+      <Project Name="21-asyn_synctronNode" ConfigName="Debug"/>
+      <Project Name="22-I_DGV_dirffDriv_syntron" ConfigName="Debug"/>
+      <Project Name="23-Serial_simples" ConfigName="Debug"/>
+      <Project Name="24-serial_async_simples" ConfigName="Debug"/>
+      <Project Name="prototest" ConfigName="Debug"/>
+      <Project Name="26-I_DGV_tcpserver_syntron" ConfigName="Debug"/>
+      <Project Name="27-singal-singal_candriver" ConfigName="Debug"/>
+      <Project Name="28-idgv_synctron_v20" ConfigName="Debug"/>
+      <Project Name="29-socketcan_synctron_v10" ConfigName="Debug"/>
+      <Project Name="30-singal-motec-driver-test" ConfigName="Debug"/>
+      <Project Name="31-twomotec-driver-test" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="01-boostudpserver" ConfigName="Release"/>
+      <Project Name="02-boostudpclient" ConfigName="Release"/>
+      <Project Name="03-aisoserver" ConfigName="Release"/>
+      <Project Name="04-aisoclient" ConfigName="Release"/>
+      <Project Name="04-aisoclient" ConfigName="Release"/>
+      <Project Name="05-tcpserver" ConfigName="Release"/>
+      <Project Name="06-tcpclient" ConfigName="Release"/>
+      <Project Name="07-cnet200" ConfigName="Release"/>
+      <Project Name="08_sync_timer" ConfigName="Release"/>
+      <Project Name="09-async_timer" ConfigName="Release"/>
+      <Project Name="10-callbackfunparam" ConfigName="Release"/>
+      <Project Name="11-memberfunparam" ConfigName="Release"/>
+      <Project Name="12-muti_thread" ConfigName="Release"/>
+      <Project Name="14-async_UDP_server" ConfigName="Release"/>
+      <Project Name="13-async_UDP_client" ConfigName="Release"/>
+      <Project Name="15-udpnode_exam_1_async" ConfigName="Release"/>
+      <Project Name="16-udpnpde_exam_2_sync" ConfigName="Release"/>
+      <Project Name="17-udpnode_exam_3_async_callback" ConfigName="Release"/>
+      <Project Name="17-udpnode_exam_3_async_callback" ConfigName="Release"/>
+      <Project Name="18-synctronNode" ConfigName="Release"/>
+      <Project Name="19-twoDriverSynctron" ConfigName="Release"/>
+      <Project Name="20-syncmutithread_synctronNode" ConfigName="Release"/>
+      <Project Name="21-asyn_synctronNode" ConfigName="Release"/>
+      <Project Name="22-I_DGV_dirffDriv_syntron" ConfigName="Release"/>
+      <Project Name="23-Serial_simples" ConfigName="Release"/>
+      <Project Name="24-serial_async_simples" ConfigName="Release"/>
+      <Project Name="prototest" ConfigName="Release"/>
+      <Project Name="26-I_DGV_tcpserver_syntron" ConfigName="Release"/>
+      <Project Name="27-singal-singal_candriver" ConfigName="Release"/>
+      <Project Name="28-idgv_synctron_v20" ConfigName="Release"/>
+      <Project Name="29-socketcan_synctron_v10" ConfigName="Release"/>
+      <Project Name="30-singal-motec-driver-test" ConfigName="Release"/>
+      <Project Name="31-twomotec-driver-test" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>

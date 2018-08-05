@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/testproxy.dir/main.cpp.o  -o testproxy -rdynamic -lzmq -lz -ldl -lm 
